@@ -33,7 +33,7 @@ class App extends React.Component {
   clearTodos = () => {
     console.log("Clear Todos");
     this.setState({
-      todo: this.state.todo.filter(todo => {
+      todos: this.state.todos.filter(todo => {
         return !todo.completed;
       })
     });
@@ -42,8 +42,8 @@ class App extends React.Component {
   addTodo = todoName => {
     console.log("Add todo: ", todoName);
     this.setState({
-      todo: [
-        ...this.state.todo,
+      todos: [
+        ...this.state.todos,
         {
         task: todoName,
         id: Date.now(),
