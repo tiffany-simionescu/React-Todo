@@ -1,6 +1,18 @@
 import React from 'react';
+import styled from 'styled-components';
 import TodoForm from './components/TodoComponents/TodoForm';
 import TodoList from './components/TodoComponents/TodoList';
+
+const MainContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+`;
+
+const MainHeader = styled.h2`
+  font-family: Roboto;
+  color: white;
+`;
 class App extends React.Component {
   // you will need a place to store your state in this component.
   // design `App` to be the parent component of your application.
@@ -55,15 +67,15 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <h2>Welcome to your Todo App!</h2>
+      <MainContent>
+        <MainHeader>Welcome to your Todo App!</MainHeader>
         <TodoForm addTodo={this.addTodo} />
         <TodoList 
           todos={this.state.todos}
           toggleTodo={this.toggleTodo}
           clearTodos={this.clearTodos}
         />
-      </div>
+      </MainContent>
     );
   }
 }
