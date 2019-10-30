@@ -63,10 +63,6 @@ class App extends React.Component {
           toggleTodo={this.toggleTodo}
           clearTodos={this.clearTodos}
         />
-        {/*  
-        <button>Submit</button>
-        <button>Clear All</button>
-        */}
       </div>
     );
   }
