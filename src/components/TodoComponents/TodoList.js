@@ -18,6 +18,7 @@ const ClearButton = styled.button`
   padding:9px 23px;
   text-decoration:none;
   text-shadow:0px 1px 0px #263666;
+  width: 175px;
 `;
 
 const TodoList = props => {

@@ -10,12 +10,12 @@ const AddButton = styled.button`
   display:inline-block;
   cursor:pointer;
   color:#ffffff;
-  font-family:Arial;
   font-size:15px;
   padding:9px 23px;
   text-decoration:none;
   text-shadow:0px 1px 0px #263666;
   margin: 20px auto;
+  width: 175px;
 `;
 
 class TodoForm extends React.Component {
